@@ -18,6 +18,10 @@ import (
 	"github.com/harvester/harvester-installer/pkg/util"
 	"github.com/harvester/harvester-installer/pkg/version"
 	"github.com/harvester/harvester-installer/pkg/widgets"
+<<<<<<< HEAD
+=======
+	"gopkg.in/yaml.v3"
+>>>>>>> 0292917 (feat: replace yaml packages with gopkg.in/yaml.v3)
 )
 
 const (
