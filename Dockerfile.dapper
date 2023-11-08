@@ -24,7 +24,7 @@ RUN if [ "${ARCH}" == "amd64" ]; then \
     curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s v1.49.0; \
     fi
 
-RUN zypper addrepo http://download.opensuse.org/distribution/leap/15.4/repo/oss/ oss && \
+RUN zypper addrepo http://mirrors.tuna.tsinghua.edu.cn/opensuse/distribution/leap/15.4/repo/oss/ oss && \
     zypper --gpg-auto-import-keys refresh && \
     zypper in -y qemu-x86 qemu-tools
 
